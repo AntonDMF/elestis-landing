@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="it"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;title&gt;DMF — Landing Page&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Landing page DMF con logo, sfondo e wireframe video." /&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* ===============================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>THEME TOKENS — puoi modificare qui</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">       </span>=============================== */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--font-family-base: "Goldman", system-ui, sans-serif;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>/* Colori */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--color-bg: #0b0d12;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--color-overlay: rgba(8, 10, 15, .55);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--color-card: rgba(255, 255, 255, 0.06);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--color-text: #eef2f7;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--color-text-dim: #c8d0da;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--color-accent: #7c9cff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--color-accent-ink: #0b1020;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--color-border: rgba(255, 255, 255, 0.14);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--focus-ring: 0 0 0 3px rgba(124, 156, 255, .55);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--radius-lg: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--radius-md: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--space-3: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--space-4: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--space-5: 36px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--space-6: 56px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>--content-max: 62rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* FONT LOCALE */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>@font-face {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: "Goldman";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>src: url("./assets/Goldman-Regular.ttf") format("truetype");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight: 400;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-style: normal;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-display: swap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* BASE */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>*, *::before, *::after { box-sizing: border-box; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-family: var(--font-family-base);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--color-text);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: var(--color-bg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>body::before {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>content: "";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>position: fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>inset: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>linear-gradient(180deg, var(--color-overlay), var(--color-overlay)),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>url("./assets/aerial.jpg") center / cover no-repeat;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>z-index: -1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.page {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: var(--space-3) var(--space-4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: min(100% - 2 * var(--space-4), var(--content-max));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin-inline: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.logo img {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>width: 48px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>height: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>main {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>flex: 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: var(--space-6) var(--space-4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: var(--color-card);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(8px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border: 1px solid var(--color-border);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-lg);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: var(--space-6);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 0 0 var(--space-3);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 2.5rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.hero p {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>margin: 0 0 var(--space-5);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--color-text-dim);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: 1.125rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>display: inline-block;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>background: var(--color-accent);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--color-accent-ink);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: 0.85rem 1.15rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>border-radius: var(--radius-md);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-weight: 700;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-decoration: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>transition: transform .12s ease, box-shadow .12s ease;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn:hover { transform: translateY(-1px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>.btn:active { transform: translateY(0); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>footer {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>padding: var(--space-4);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>color: var(--color-text-dim);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>font-size: .95rem;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="page"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;a class="logo" href="#"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="./assets/DMF-logo-2002_white.svg" alt="Logo DMF"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;section class="hero container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;DMF Landing Page&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Una breve descrizione della tua iniziativa, prodotto o progetto.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;a class="btn" href="./assets/wireframeDMF.mp4" target="_blank" rel="noopener"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>Guarda il wireframe (video)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>© 2025 DMF. Tutti i diritti riservati.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>

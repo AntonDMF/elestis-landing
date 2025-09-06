@@ -1,4 +1,204 @@
 <!doctype html>
-<meta charset="utf-8">
-<title>Test</title>
-<h1>Rendered</h1>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DMF — Landing</title>
+  <meta name="description" content="ELESTIS.com test" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Self-contained CSS -->
+  <style>
+    /* ------------------------------
+       1) Customizable design tokens
+    --------------------------------*/
+    :root{
+      --max-width: 980px;
+      --space-1: 8px;
+      --space-2: 12px;
+      --space-3: 20px;
+      --space-4: 32px;
+      --radius: 14px;
+
+      /* Colors */
+      --bg-overlay: rgba(0,0,0,.45);
+      --card-bg: rgba(12,12,12,.6);
+      --text: #ffffff;
+      --muted: #e6e6e6;
+      --brand: #4dd2ff;     /* primary accent */
+      --brand-2: #00ffa3;   /* secondary accent for hover/focus */
+
+      /* Typography */
+      --title-size: clamp(28px, 5.5vw, 54px);
+      --lead-size: clamp(16px, 2.5vw, 20px);
+      --btn-size: 16px;
+      --line-height: 1.5;
+    }
+
+    /* ------------------------------
+       2) Font: Goldman-Regular.ttf
+    --------------------------------*/
+    @font-face{
+      font-family: "Goldman";
+      src: url("assets/Goldman-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    html, body { height: 100%; }
+    * { box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      color: var(--text);
+      font-family: Goldman, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: var(--line-height);
+
+      /* Full-page background image */
+      background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url("assets/aerial_background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Layout wrapper */
+    .wrap{
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: var(--space-4);
+    }
+
+    /* Card with centered content */
+    .card{
+      width: 100%;
+      max-width: var(--max-width);
+      background: var(--card-bg);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      padding: clamp(20px, 5vw, 48px);
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+
+    .logo{
+      width: min(260px, 60vw);
+      height: auto;
+      display: block;
+      margin: 0 auto var(--space-4);
+      filter: drop-shadow(0 4px 16px rgba(0,0,0,.55));
+    }
+
+    h1{
+      margin: 0 0 var(--space-2) 0;
+      font-size: var(--title-size);
+      letter-spacing: .5px;
+    }
+
+    p.lead{
+      margin: 0 auto var(--space-4);
+      max-width: 70ch;
+      font-size: var(--lead-size);
+      color: var(--muted);
+    }
+
+    /* Buttons */
+    .actions{
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      justify-content: center;
+    }
+
+    .btn{
+      --pad-y: 12px; --pad-x: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--pad-y) var(--pad-x);
+      border-radius: calc(var(--radius) - 4px);
+      border: 1px solid rgba(255,255,255,.18);
+      font-size: var(--btn-size);
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .08s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+      will-change: transform;
+      user-select: none;
+    }
+
+    .btn:focus-visible{
+      outline: 2px solid var(--brand-2);
+      outline-offset: 2px;
+    }
+
+    .btn.primary{
+      background: linear-gradient(180deg, var(--brand), #1da2ff);
+      color: #0b1220;
+    }
+    .btn.primary:hover{ transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,0,0,.35); }
+
+    .btn.ghost{
+      background: transparent;
+      color: var(--text);
+    }
+    .btn.ghost:hover{
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.35);
+    }
+
+    /* Footer note (optional) */
+    .foot{
+      margin-top: var(--space-3);
+      font-size: 13px;
+      color: rgba(255,255,255,.75);
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      .btn, .btn:hover { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" role="region" aria-label="Landing content">
+      <!-- If your SVG has a different name, update the src below.
+           From your folder list: “DMF-logo-20…__02_white.svg” -->
+      <img
+        class="logo"
+        src="assets/DMF-logo-20__02_white.svg"
+        alt="DMF Logo" />
+
+      <h1>Design Made Fast</h1>
+      <p class="lead">
+        Il punto d'incontro unico e innovativo per i servizi Droni.
+      </p>
+
+      <div class="actions" role="group" aria-label="Primary actions">
+        <!-- Opens local MP4 in a new tab -->
+        <a class="btn primary"
+           href="assets/wireframeDMF.mp4"
+           target="_blank" rel="noopener">
+          Watch Wireframe
+        </a>
+
+        <!-- External site -->
+        <a class="btn ghost"
+           href="https://docs.google.com/forms/d/e/1FAIpQLScm8Wm-0SZ-D6G-RmXriZfS8-_il-kYrW0u_4fc6R8b98QUzQ/viewform?usp=dialog"
+           target="_blank" rel="noopener">
+          Breve questionario per aiutarci a indirizzare al meglio il nostro servizio per i professionisti.
+        </a>
+      </div>
+
+      <div class="foot">© <span id="year"></span> Your Company</div>
+    </section>
+  </main>
+
+  <!-- Tiny inline script just to set the year (can be removed if undesired) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

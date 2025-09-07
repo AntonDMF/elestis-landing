@@ -55,7 +55,7 @@
       line-height: var(--line-height);
 
       /* Full-page background image */
-      background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url("assets/aerial_background.jpg");
+      background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url("assets/aerial_background2.png");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -133,19 +133,35 @@
       outline-offset: 2px;
     }
 
-    .btn.primary{
-      background: linear-gradient(180deg, var(--brand), #1da2ff);
-      color: #0b1220;
+    /* Primary button: light grey "dark white" */
+     .btn.primary {
+      background: #f2f2f2;
+      color: #111;
+      border: 1px solid #ccc;
     }
-    .btn.primary:hover{ transform: translateY(-1px); box-shadow: 0 8px 20px rgba(0,0,0,.35); }
+    .btn.primary:hover {
+      background: #e6e6e6;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(0,0,0,.2);
+    }
 
-    .btn.ghost{
-      background: transparent;
-      color: var(--text);
+    /* Ghost button restyled as secondary */
+    .btn.ghost {
+      background: #d9d9d9;
+      color: #111;
+      border: 1px solid #bbb;
+      flex-direction: column; /* stack caption under label */
+      line-height: 1.2;
+      padding: 14px 18px;
     }
-    .btn.ghost:hover{
-      background: rgba(255,255,255,.08);
-      border-color: rgba(255,255,255,.35);
+   .btn.ghost span.caption {
+      font-size: 13px;
+     color: #555;
+      margin-top: 4px;
+    }
+    .btn.ghost:hover {
+      background: #cfcfcf;
+      border-color: #aaa;
     }
 
     /* Footer note (optional) */
@@ -181,16 +197,18 @@
         <a class="btn primary"
            href="assets/wireframeDMF.mp4"
            target="_blank" rel="noopener">
-          Cosa proponiamo (beta version)
+          Cosa proponiamo
         </a>
 
         <!-- External site -->
-        <a class="btn ghost"
-           href="https://docs.google.com/forms/d/e/1FAIpQLScm8Wm-0SZ-D6G-RmXriZfS8-_il-kYrW0u_4fc6R8b98QUzQ/viewform?usp=dialog"
-           target="_blank" rel="noopener">
-          Breve questionario per aiutarci a indirizzare al meglio il nostro servizio per i professionisti.
-        </a>
-      </div>
+         <!-- Ghost/secondary button with caption -->
+          <a class="btn ghost"
+             href="https://docs.google.com/forms/d/e/1FAIpQLScm8Wm-0SZ-D6G-RmXriZfS8-_il-kYrW0u_4fc6R8b98QUzQ/viewform?usp=dialog"
+             target="_blank" rel="noopener">
+            Piloti e professionisti
+            <span class="caption">Breve questionario per aiutarci ad indirizzare al meglio il nostro servizio</span>
+            </a>
+        </div>
 
       <div class="foot">© <span id="year"></span> DMF Technologies SRL</div>
     </section>

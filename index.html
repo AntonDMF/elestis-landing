@@ -55,7 +55,7 @@
       line-height: var(--line-height);
 
       /* Full-page background image */
-      background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url("assets/aerial_background2.png");
+      background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url("assets/aerial_background.jpg");
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -104,10 +104,11 @@
     }
 
     /* Buttons */
-    .actions{
+        .actions {
       display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-2);
+      flex-direction: column;   /* impila in verticale */
+      align-items: center;      /* centra orizzontalmente */
+      gap: 14px;                /* spazio tra i bottoni */
       justify-content: center;
     }
 

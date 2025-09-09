@@ -133,7 +133,14 @@
       outline: 2px solid var(--brand-2);
       outline-offset: 2px;
     }
-
+          /* Gruppo orizzontale per bottoni affiancati */
+          .btn-group {
+            display: flex;
+            gap: 14px;            /* spazio tra i bottoni */
+            justify-content: center;
+            flex-wrap: wrap;      /* manda a capo se lo schermo è stretto */
+          }
+    
     /* Primary button: light grey "dark white" */
      .btn.primary {
       background: #f2f2f2;
@@ -194,22 +201,29 @@
       </p>
 
       <div class="actions" role="group" aria-label="Primary actions">
-        <!-- Opens local MP4 in a new tab -->
+        <!-- Opens wireframeDMF.mp4 in a new tab -->
         <a class="btn primary"
            href="assets/wireframeDMF.mp4"
            target="_blank" rel="noopener">
           Cosa proponiamo
         </a>
 
-        <!-- External site -->
-         <!-- Ghost/secondary button with caption -->
-          <a class="btn ghost"
-             href="https://docs.google.com/forms/d/e/1FAIpQLScm8Wm-0SZ-D6G-RmXriZfS8-_il-kYrW0u_4fc6R8b98QUzQ/viewform?usp=dialog"
-             target="_blank" rel="noopener">
-            Piloti e professionisti
-            <span class="caption">Breve questionario per aiutarci ad indirizzare al meglio il nostro servizio</span>
-            </a>
-        </div>
+           <!-- Due ghost affiancati -->
+            <div class="btn-group">
+              <a class="btn ghost"
+                 href="https://docs.google.com/forms/d/e/1FAIpQLScm8Wm-0SZ-D6G-RmXriZfS8-_il-kYrW0u_4fc6R8b98QUzQ/viewform?usp=dialog"
+                 target="_blank" rel="noopener">
+                Piloti e professionisti
+              <span class="caption">Breve questionario per aiutarci ad indirizzare al meglio il nostro servizio</span>
+              </a>
+              <a class="btn ghost"
+                 href="https://docs.google.com/forms/d/e/1FAIpQLSdK3ZXV3dx6AZ7q9O-MgNVwaldN_x6g9hLXtBPOpyUN1CEsOw/viewform"
+                 target="_blank" rel="noopener">
+                Clienti 
+                <span class="caption">Breve questionario per aiutarci a comprendere le esigenze reali</span>
+              </a>
+            </div>
+        </div> 
 
       <div class="foot">© <span id="year"></span> DMF Technologies SRL</div>
     </section>

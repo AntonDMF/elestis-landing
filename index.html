@@ -36,7 +36,7 @@
     }
 
     /* ------------------------------
-       2) Font: Goldman-Regular.ttf
+       2) Font: Grotesk
     --------------------------------*/
     @font-face{
       font-family: "BDOGroteskB";
@@ -171,7 +171,21 @@
       transform: translateY(-1px);
       box-shadow: 0 6px 14px rgba(0,0,0,.2);
     }
-
+    
+    /*link email*/
+    .email-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #444;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .email-link:hover {
+      color: #000;
+      text-decoration: underline;
+    }
     /* Ghost button restyled as secondary */
     .btn.ghost {
       background: #f2f2f2;
@@ -216,7 +230,7 @@
       <img src="Elestis_Logotipo_Bianco e verde.png" alt="Logo" class="logo" />
     <!--  <h1>Elestis</h1>-->
       <p class="lead">
-        Il punto d'incontro unico e innovativo per i servizi Droni <br> info@elestis.com
+        Il punto d'incontro unico e innovativo per i servizi Droni <br> <a href="mailto:info@elestis.com" class="email-link">Contattaci per ulteriori informazioni</a>
       </p>
 
       <div class="actions" role="group" aria-label="Primary actions">
